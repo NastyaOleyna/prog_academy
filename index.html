@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">How much <span class="colorBitcoin">₿</span>itcoins you can buy?</div>
+        <div class="form">
+            <div class="inputField">
+              <label for="bitcoin">BTC price</label>
+                <input type="text"  id="bitcoin" placeholder="What is Bitcoin price today?" onkeypress="validate(event)">
+            </div>
+          
+            <div class="inputField">
+                <label for="dollars">Your money $</label>
+                <input type="text" id="dollars"  placeholder="How much $ do you have?" onkeypress="validate(event)">
+            </div>
+          
+        </div>
+        <div class="result" id="result">
+           <span class="text">You can buy:</span>  
+           <span class="btc" id="btcOut">0</span>
+           <div class="emoji" id="emoji"></div>
+         
+        </div>
+    </div>
+    <script src="./lib/number-rush.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
